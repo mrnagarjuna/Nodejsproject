@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  
+    /* ✨ Background image + gradient overlay */
+    background: linear-gradient(to right, rgba(0, 85, 255, 0.712), rgba(0, 114, 255, 0.6)),
+                url('/images/rg.jpg'); /* Make sure this path matches your image location */
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .scroll-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    rgba(176, 43, 185, 0.039);
+    color: rgba(64, 226, 56, 0.934);
+    padding: 15px 0;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(8, 132, 141, 0.879);
+  }
+  
+  .scroll-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 10s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .register-container {
+    background: rgba(176, 43, 185, 0.039);;
+    padding: 60px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.854);
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  
+  .register-container h2 {
+    text-align: top;
+    margin-bottom: 35px;
+    color: #16437bd7;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #7f1c1c;
+    border-radius: 50px;
+    font-size: 15px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #39da18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00cc33;
+  }
+  
